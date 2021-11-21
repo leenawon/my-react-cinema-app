@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleMovie from '../components/SingleMovie';
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,13 @@ function Home() {
   return (
     <div>
       <h1>my react project</h1>
-      {loading ? <h3>Loading...</h3> : null}
+      {loading ? <h3>Loading...</h3> : 
+        <div>
+          {movieList.map((movie) => (
+            <SingleMovie key={movie.id} movie={movie} />
+          ))}
+        </div>
+      }
     </div>
   )
 }
