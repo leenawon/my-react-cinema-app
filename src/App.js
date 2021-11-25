@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
   return (
-    <div>
-      <h1>my react project</h1>
-      {loading ? <h3>Loading...</h3> : null}
-    </div>
+    <Router>
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
   );
 }
 
