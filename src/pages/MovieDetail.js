@@ -24,6 +24,26 @@ function MovieDetail() {
       <Link to="/">
         <h4 className={style.back}>👈 돌아가기</h4>
       </Link>
+      <h2 className={style.title}>{movieDetail.title_long}</h2>
+      {loading ? <h3 className="loading">작품의 설명을 불러오고 있어요...</h3> : 
+        <div className={style.container}>
+          <div className={style.item}>
+            <img src={movieDetail.large_cover_image} alt={movieDetail.title} />
+          </div>
+          <div className={style.item}>
+            <div className={style.counts}>
+              <span>좋아요 수 👍 {movieDetail.like_count}개</span>
+              <span>다운로드 수 📥 {movieDetail.download_count}회</span>
+              <span>별점 ⭐ {movieDetail.rating}/10.0</span>
+              <span>런타임 ⏱ {movieDetail.runtime}분</span>
+            </div>
+            {movieDetail.genres.map((genre) => (
+              <h4 key={genre}>{genre}</h4>
+            ))}
+            <p>{movieDetail.description_full}</p>
+          </div>
+        </div>
+      }
     </div>
   )
 }
