@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-react-cinema-app/static/css/main.c940484a.chunk.css",
+    "main.js": "/my-react-cinema-app/static/js/main.9b300671.chunk.js",
+    "main.js.map": "/my-react-cinema-app/static/js/main.9b300671.chunk.js.map",
+    "runtime-main.js": "/my-react-cinema-app/static/js/runtime-main.9067a96c.js",
+    "runtime-main.js.map": "/my-react-cinema-app/static/js/runtime-main.9067a96c.js.map",
+    "static/js/2.b1410e41.chunk.js": "/my-react-cinema-app/static/js/2.b1410e41.chunk.js",
+    "static/js/2.b1410e41.chunk.js.map": "/my-react-cinema-app/static/js/2.b1410e41.chunk.js.map",
+    "index.html": "/my-react-cinema-app/index.html",
+    "static/css/main.c940484a.chunk.css.map": "/my-react-cinema-app/static/css/main.c940484a.chunk.css.map",
+    "static/js/2.b1410e41.chunk.js.LICENSE.txt": "/my-react-cinema-app/static/js/2.b1410e41.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9067a96c.js",
+    "static/js/2.b1410e41.chunk.js",
+    "static/css/main.c940484a.chunk.css",
+    "static/js/main.9b300671.chunk.js"
+  ]
+}
